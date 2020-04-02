@@ -24,4 +24,8 @@ class App < Sinatra::Base
     "#{@product}"
   end
 
+  get '/reversename/:name' do
+    "#{params[:name].reverse}"
+  end
+
 end
